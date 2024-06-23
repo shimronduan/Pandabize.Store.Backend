@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Pandabize.Store.Application.Features.Items.Commands.CreateItem;
+using Pandabize.Store.Application.Features.Items.Commands.UpdateItem;
 using Pandabize.Store.Domain.Entities;
 
 namespace Pandabize.Store.Application.Profiles
@@ -9,6 +10,7 @@ namespace Pandabize.Store.Application.Profiles
         public MappingProfile()
         {
             CreateMap<Item, CreateItemCommand>().ReverseMap();
+            CreateMap<Item, UpdateItemCommand>().ReverseMap();
         }
     }
 }

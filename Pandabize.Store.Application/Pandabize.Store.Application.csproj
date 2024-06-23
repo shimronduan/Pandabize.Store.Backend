@@ -17,9 +17,6 @@
 
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Features\Items\Commands\DeleteItem\" />
-	  <Folder Include="Features\Items\Commands\UpdateItem\" />
-	  <Folder Include="Features\Items\Queries\GetItemDetails\" />
 	  <Folder Include="Features\Options\Commands\CreateOption\" />
 	  <Folder Include="Features\Options\Commands\DeleteOption\" />
 	  <Folder Include="Features\Options\Commands\UpdateOption\" />
