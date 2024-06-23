@@ -4,7 +4,8 @@ namespace Pandabize.Store.Domain.Entities
 {
     public class Item : AuditableEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public Guid Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public ICollection<Option>? Options { get; set; }
     }
 }
