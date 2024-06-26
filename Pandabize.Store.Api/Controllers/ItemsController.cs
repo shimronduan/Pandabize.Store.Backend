@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pandabize.Store.Application.Features.Items.Queries.GetAllItems;
 
 namespace Pandabize.Store.Api.Controllers
 {
@@ -20,7 +21,8 @@ namespace Pandabize.Store.Api.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult<List<string>>> GetAllEvents()
         {
-            return Ok();
+            var result = await _mediator.Send(new GetAllItemsQuery());
+            return Ok(result);
         }
     }
 }
